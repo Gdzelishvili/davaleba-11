@@ -5,14 +5,16 @@
   width: min(100%, 1440px);
   background-color: var(--mainColor);
   display: grid;
-  grid-template-columns: 22,2% 22,2% 22,2% 22,2%;
-  grid-template-rows: 112px 56px 64px 588px 64px 32px 348px;
+  grid-template-columns: 22, 2% 22, 2% 22, 2% 22, 2%;
+  grid-template-rows: 112px 56px 64px 540px 64px 32px 348px;
   column-gap: 40px;
   grid-template-areas:
     "header header header header"
     "frame1 frame2 frame3 frame4 "
     "gap gap gap gap"
-    "aside1 mCover mCover aside2";
+    "aside1 mCover mCover aside2"
+    "gap2 gap2 gap2 gap2"
+    "sec2_title . . .";
 }
 
 .main_header {
@@ -65,11 +67,9 @@
   box-shadow: var(--shadow);
 }
 
-
-
 /* frames start */
-.first{
-    margin: 20px;
+.first {
+  margin: 20px;
 }
 
 .fame_text {
@@ -86,8 +86,6 @@
   gap: 8px;
   align-items: center;
 }
-
-
 
 /* gap div */
 #gap_div {
@@ -129,9 +127,9 @@
   font-weight: 400;
   line-height: 27px; /* 168.75% */
 }
-.aside_felx{
-    display: flex;
-    justify-content: space-between;
+.aside_felx {
+  display: flex;
+  justify-content: space-between;
 }
 
 .aside_h4 {
@@ -149,31 +147,58 @@
   grid-area: mCover;
   display: flex;
   flex-direction: column;
-  row-gap: 20px;   
+  row-gap: 20px;
 }
 
-.price_and_button{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #DFD9D9;
-    
+.price_and_button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #dfd9d9;
 }
-.sofa_price{
-    color: #1C5550;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px; /* 150% */    
-    margin-left: 20px;
+.sofa_price {
+  color: #1c5550;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  margin-left: 20px;
 }
-.add_to{
-    display: flex;
-    height: 40px;
-    padding: 9px 50px 9px 51px;
-    justify-content: center;
-    align-items: center;  
-    background-color: #C3B97F; 
-    border: none; 
+.add_to {
+  display: flex;
+  height: 40px;
+  padding: 9px 50px 9px 51px;
+  justify-content: center;
+  align-items: center;
+  background-color: #c3b97f;
+  border: none;
+}
+
+/* asside 2  */
+
+.aside2 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+/* ga[ */
+
+.gap2 {
+  height: 64px;
+  grid-area: gap2;
+}
+
+/* sec2 titile */
+
+.sec2_title {
+  grid-area: sec2_title;
+  color: #dfd9d9;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+  margin-left: 20px;
 }
