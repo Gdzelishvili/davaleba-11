@@ -1,5 +1,6 @@
 :root {
     --mainColor: #1C5550;
     --font14: 14px;
+    --shadow: 1.52px 3px 3px -0.8px rgba(0, 0, 0, 0.20) inset, 0px -0.3px 1px 0px rgba(223, 217, 217, 0.40) inset;
  
 }
