@@ -202,3 +202,29 @@
   line-height: 32px; /* 133.333% */
   margin-left: 20px;
 }
+.margin_1 {
+  margin-left: 20px;
+}
+.sec2_p {
+  color: #dfd9d9;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.price_bottom {
+  background: #dfd9d9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.add_to2 {
+  height: 40px;
+  padding: 9px 8px 9px 10px;
+  background-color: #C3B97F;
+  border: none;
+}
+.sec2_p{
+    margin: 8px 0;
+}
