@@ -4,5 +4,22 @@
 .container {
     width: min(100%, 1440px);
     background-color: var(--mainColor);
+    padding: 32px 20px;
     display: grid;
+    grid-template-columns: repeat(4, 22,2222222%);
+    grid-template-rows: 112px 56px 588px 32px 348px;
+    grid-template-areas: 
+    ""
+    ;
+}
+
+.main_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_ul{
+    display: flex;
+    gap: 84px;
 }
